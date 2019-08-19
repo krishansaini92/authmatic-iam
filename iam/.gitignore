@@ -1,0 +1,9 @@
+logs/*
+uploads
+media
+node_modules
+yarn*
+.nyc_output/
+coverage/
+.idea
+.tern-port

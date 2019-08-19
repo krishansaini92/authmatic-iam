@@ -1,0 +1,18 @@
+{
+  "resetPassword": {
+    "expiryTtl": "3s"
+  },
+  "notifications": {
+    "shallSend": false
+  },
+  "logging": {
+    "level": "error",
+    "console": {
+      "isEnabled": true
+    },
+    "fs": {
+      "isEnabled": false,
+      "logDir": "./logs"
+    }
+  }
+}

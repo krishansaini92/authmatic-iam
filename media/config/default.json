@@ -1,0 +1,111 @@
+{
+  "env": {
+    "isProduction": false
+  },
+  "server": {
+    "port": 3001,
+    "host": "localhost",
+    "corsWhitelist": ["localhost"],
+    "allowGraphqlIntrospection": true
+  },
+  "logging": {
+    "level": "debug",
+    "console": {
+      "isEnabled": true
+    },
+    "fs": {
+      "isEnabled": true,
+      "logDir": "./logs"
+    }
+  },
+  "database": {
+    "url": "mongodb://localhost:27017/or",
+    "user": "",
+    "password": ""
+  },
+  "session": {
+    "key": "RandomKey",
+    "expiryTtl": "30d",
+    "refreshTtl": "1d"
+  },
+  "encryption": {
+    "userPrivacyData": {
+      "isEnabled": true,
+      "secret": "onrent",
+      "ecbKey": "8CBDEC62EB4DCA778F842B02503011B2"
+    }
+  },
+  "templates": {
+    "emails": {
+      "verifyEmail": {
+        "subject": "Activate Email - brand",
+        "body": "i:{{id}} t:{{emailVerifyCode}} is your brand verification code."
+      },
+      "forgotPassword": {
+        "subject": "Reset password - brand",
+        "body": "{{otp}} is your brand verification code."
+      }
+    },
+    "phone": {
+      "verifyPhone": "{{otp}} is your brand verification code."
+    }
+  },
+  "notifications": {
+    "shallSend": true,
+    "senderEmailId": "Brand<donotreply@brand.com>",
+    "plivo": {
+      "authId": "AUTH_ID",
+      "authToken": "AUTH_TOKEN",
+      "senderPhoneNumber": "PHONE_NUMBER"
+    }
+  },
+  "resetPassword": {
+    "expiryTtl": "15m"
+  },
+  "s3": {
+    "bucketName": "onrent",
+    "credentials": {
+      "accessKeyId": "S3_Access_key",
+      "secretAccessKey": "s3_Secret_key"
+    },
+    "domain": "https://s3.ap-south-1.amazonaws.com/",
+    "folders": {
+      "image": "images/"
+    }
+  },
+  "image": {
+    "mimetypes": {
+      "image/png": "png",
+      "image/jpeg": "jpeg"
+    },
+    "resolutions": {
+      "100x100": {
+        "width": 100,
+        "height": 100
+      },
+      "200x200": {
+        "width": 200,
+        "height": 200
+      },
+      "400x400": {
+        "width": 400,
+        "height": 400
+      },
+      "600x600": {
+        "width": 600,
+        "height": 600
+      },
+      "1000x1000": {
+        "width": 1000,
+        "height": 1000
+      }
+    }
+  },
+  "filesPath": {
+    "images": {
+      "cropped": "files/images/cropped/",
+      "compressed": "files/images/compressed/",
+      "original": "files/images/original/"
+    }
+  }
+}

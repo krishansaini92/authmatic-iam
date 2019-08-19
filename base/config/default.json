@@ -1,0 +1,38 @@
+{
+  "env": {
+    "isProduction": false
+  },
+  "server": {
+    "port": 3000,
+    "host": "localhost",
+    "corsWhitelist": ["localhost"],
+    "allowGraphqlIntrospection": true
+  },
+  "logging": {
+    "level": "debug",
+    "console": {
+      "isEnabled": true
+    },
+    "fs": {
+      "isEnabled": true,
+      "logDir": "./logs"
+    }
+  },
+  "database": {
+    "url": "mongodb://localhost:27017/or",
+    "user": "",
+    "password": ""
+  },
+  "session": {
+    "key": "RandomKey",
+    "expiryTtl": "30d",
+    "refreshTtl": "1d"
+  },
+  "encryption": {
+    "userPrivacyData": {
+      "isEnabled": true,
+      "secret": "onrent",
+      "ecbKey": "8CBDEC62EB4DCA778F842B02503011B2"
+    }
+  }
+}

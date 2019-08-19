@@ -1,0 +1,67 @@
+{
+  "INVALID_EMAIL_PHONE": {
+    "statusCode": 400,
+    "message": "Please enter valid email or phone number",
+    "error": "INVALID_EMAIL_PHONE"
+  },
+  "INVALID_CREDENTIALS": {
+    "statusCode": 400,
+    "message": "Please enter valid credentials",
+    "error": "INVALID_CREDENTIALS"
+  },
+  "INVALID_REQUEST_DATA": {
+    "statusCode": 400,
+    "message": "Invalid Parameters",
+    "error": "INVALID_REQUEST_DATA"
+  },
+  "LINK_EXPIRED": {
+    "statusCode": 400,
+    "message": "This link has been expired",
+    "error": "LINK_EXPIRED"
+  },
+  "INVALID_OLD_PASSWORD": {
+    "statusCode": 400,
+    "message": "Your old password is incorrect",
+    "error": "INVALID_OLD_PASSWORD"
+  },
+  "AUTHENTICATION_FAILED": {
+    "statusCode": 401,
+    "message": "Authentication failed",
+    "error": "AUTHENTICATION_FAILED"
+  },
+  "INVALID_EMAIL": {
+    "statusCode": 400,
+    "message": "email must be a valid email",
+    "error": "INVALID_EMAIL"
+  },
+  "COUNTRY_CODE_ONLY_NUMBERS": {
+    "statusCode": 400,
+    "message": "Country Code must contain numbers only",
+    "error": "INVALID_COUNTRY_CODE"
+  },
+  "PHONE_NUMBER_ONLY_NUMBER": {
+    "statusCode": 400,
+    "message": "Phone Number must contain numbers only",
+    "error": "PHONE_NUMBER_ONLY_NUMBER"
+  },
+  "EMAIL_ALREADY_REGISTERED": {
+    "statusCode": 400,
+    "message": "This Email is already registered in our database. Please click on Forgot Password to generate a new Password or try login",
+    "error": "EMAIL_ALREADY_REGISTERED"
+  },
+  "INVALID_NAME": {
+    "statusCode": 400,
+    "message": "Name should only contain alphabets and spaces",
+    "error": "INVALID_NAME"
+  },
+  "INVALID_EMAIL_SERVER": {
+    "statusCode": 400,
+    "message": "Email id does not exist in our database",
+    "error": "INVALID_EMAIL_SERVER"
+  },
+  "INVALID_IMAGE": {
+    "statusCode": 400,
+    "message": "Please select a valid image file",
+    "error": "INVALID_IMAGE"
+  }
+}

@@ -18,7 +18,7 @@
     "fmt": "run-s 'fmt:js -- ./src/**/*.js' 'fmt:json -- ./config/**/*.json ./src/**/*.json' 'eslint-fix -- ./src'"
   },
   "dependencies": {
-    "aws-sdk": "^2.437.0",
+    "aws-sdk": "^2.814.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "chai-http": "^4.2.1",

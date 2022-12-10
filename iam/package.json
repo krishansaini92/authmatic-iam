@@ -26,7 +26,7 @@
     "config": "^3.0.1",
     "cors": "^2.8.5",
     "crypto-js": "^3.1.9-1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-request-id": "^1.4.1",
     "factory-girl": "^5.0.4",
     "handlebars": "^4.1.0",
